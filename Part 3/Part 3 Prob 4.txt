@@ -1,0 +1,70 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x, result, result2, result3, result4, result5, stan, userInput;
+		
+		Console.WriteLine("Choose Quadratic Expressions Select [1-4] Only ");
+		Console.Write(" 1. (x-1)(x+2) \n 2. -x2+ 3x - 1 \n 3. 5x(x+3) - 12x \n 4. x3- x(x2+ x - 3) \n >");
+		userInput = Convert.ToInt16(Console.ReadLine());
+		
+		if (userInput==1)
+		{
+			Console.Write("Input The Value of X : ");
+			x = Convert.ToInt16(Console.ReadLine());
+
+			result = x * x;
+			result2 = x * 2;
+			result3 = 1 * x;
+			result4 = 1 * 2;
+			
+			stan = result2 - result3;
+			
+			Console.WriteLine("The Answer is {0}+{1}-{2}-{3}", result, result2, result3, result4);
+			Console.WriteLine("The Standard Form is {0}+{1}-{2}", result, stan, result4);
+		}
+		else if (userInput==2)
+		{
+			Console.Write("Input The Value Of X : ");
+			x = Convert.ToInt16(Console.ReadLine());
+			
+			result = x * 2;
+			result2 = 3 * x;
+			result3 = 1;
+			
+			Console.WriteLine("The Standard Form is {0}-{1}+{2}", result, result2, result3);
+				
+		}
+		else if (userInput==3)
+		{
+			Console.Write("Input The Value Of X : ");
+			x = Convert.ToInt16(Console.ReadLine());
+			
+			result = 5 * x;
+			result2 = x + 3;
+			result3 = 12 * x;
+			result4 = result3 - result2;
+			
+			Console.WriteLine("The Standard Form Is {0}+{1}", result, result4);
+		}
+		
+		else if (userInput==4)
+		{
+			Console.Write("Input The Value Of X : ");
+			x = Convert.ToInt16(Console.ReadLine());
+			
+			result = x * 3;
+			result2 = x * 2;
+			result3 = x - 3;
+			result4 = result2 + result3;
+			result5 = x * result4;
+			
+			Console.WriteLine("The Standard Form Is {0}-{1}", result, result5);
+		}
+		
+		else
+			Console.WriteLine("Invalid Input");
+	}
+}

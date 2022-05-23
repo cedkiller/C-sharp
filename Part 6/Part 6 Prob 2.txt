@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Print your name 10 times.
+		//loop
+		
+		int ctr = 1;
+		
+		while (ctr<=10)
+		{
+			Console.WriteLine("Cedrick Jasper Sarabia");
+			
+			ctr ++;
+		}
+	}
+}

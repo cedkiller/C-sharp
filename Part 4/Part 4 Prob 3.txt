@@ -1,0 +1,29 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input three numbers and output the highest number.  
+		//Combinations
+		//1 2 3
+		//1 3 2
+		//2 1 3
+		//2 3 1
+		//3 1 2
+		//3 2 1
+		
+		Console.WriteLine("Input 3 numbers and we will determine the highest number : ");
+		int n = Convert.ToInt16(Console.ReadLine());
+		int n2 = Convert.ToInt16(Console.ReadLine());
+		int n3 = Convert.ToInt16(Console.ReadLine());
+		
+		if (n3>=n && n3>=n2)
+			Console.WriteLine("The highest number is {0}", n3);
+		else if (n2>=n && n2>n3)
+			Console.WriteLine("The highest number is {0}", n2);
+		else 
+			Console.WriteLine("The highest number is {0}", n);
+
+	}
+}

@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a number and determine if it "positive", "negative", or "zero"
+		
+		Console.Write("Input a number and we will determine if it positve, negative, or zero : ");
+		int n = Convert.ToInt16(Console.ReadLine());
+		
+		if (n>0)
+			Console.WriteLine("The number {0} in positive", n);
+		else if (n<0)
+			Console.WriteLine("The number {0} in negative", n);
+		else
+			Console.WriteLine("The number {0} in zero", n);
+	}
+}

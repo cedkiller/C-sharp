@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a series of numbers and terminate the process once 5 positive numbers have been entered.
+		
+		int num;
+		int ctr = 0;
+		
+		do 
+		{
+			Console.Write("Input a number and terminate once process 5 positive numbers : ");
+			num = Convert.ToInt16(Console.ReadLine());
+			
+			
+			if (num>0)
+			{
+				ctr ++;
+			}
+			
+			if (ctr>=5)
+			{
+				break;
+			}
+			
+		}while(true);
+	}
+}

@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a number and determine if it is a single-digit number or not.  A single digit number is from -9 to +9 only.
+		
+		int num;
+		
+		Console.Write("Input a Number : ");
+		num = Convert.ToInt16(Console.ReadLine());
+		
+		Console.Write((num>=-9&&num<=9)?"It is a single digit number":"It is not a single digit number");
+		
+		
+	}
+}

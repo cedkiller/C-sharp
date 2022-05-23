@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//a.     Input a number and determine if it is zero or not.
+		
+		int num;
+		
+		Console.Write("Input a number and we wil determine if it's zero or not : ");
+		num = Convert.ToInt16(Console.ReadLine());
+		
+		if (num==0)
+			Console.WriteLine("The number is zero");
+		else
+			Console.WriteLine("The number is not zero");
+	}
+}

@@ -1,0 +1,25 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input two (2) numbers.  Compute and display the sum, difference, product, and quotient of the input numbers.
+		int num1, num2, sum, dif, pro, quo;
+		Console.Write("Input a Number : ");
+		num1 = Convert.ToInt32(Console.ReadLine());
+		Console.Write("Input Another Number :");
+		num2 = Convert.ToInt32(Console.ReadLine());
+		
+		sum = num1 + num2;
+		dif = num1 - num2;
+		pro = num1 * num2;
+		quo = num1 / num2;
+		
+		Console.WriteLine("The Sum of The Number is :"+sum);
+		Console.WriteLine("The Dif of The Number is :"+dif);
+		Console.WriteLine("The Pro of The Number is :"+pro);
+		Console.WriteLine("The Quo of The Number is :"+quo);
+		
+	}
+}

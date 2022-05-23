@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Given: w = x2 + xy + y2.  Input the value of x and y.  Output the value of w afterwards.
+
+		
+		int x, y, w;
+		
+		Console.Write("Input x : ");
+		x = Convert.ToInt16(Console.ReadLine());
+		
+		Console.Write("Input y : ");
+		y = Convert.ToInt16(Console.ReadLine());
+		
+		w = x * x + x * y + y * y;
+		
+		Console.WriteLine("Your w is : " + w);
+		
+	}
+}

@@ -1,0 +1,80 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input requirements:
+		//student name, year level (1 - 5 only), units enrolled 
+		//Output requirements:
+		//student name, tuition fee, down payment, balance
+		int rpu = 0, dp = 0;
+		
+		Console.Write("Enter student name : ");
+		string studName = Console.ReadLine();
+		
+		Console.Write("Year level : ");
+		int yl = Convert.ToInt16(Console.ReadLine());
+		
+		if (yl<1 || yl>5)
+			Console.WriteLine("Invalid input of year level");
+		else
+		{
+			Console.Write("Units enrolled : ");
+			int ue = Convert.ToInt16(Console.ReadLine());
+			
+			if (ue<1 || ue>24)
+				Console.WriteLine("Invalid input of units enrolled");
+			else
+			{
+				
+				
+				switch (yl)
+				{
+					case 1: 
+						rpu = 100;
+						break;
+						
+					case 2:
+						rpu = 120;
+						break;
+						
+					case 3:
+						rpu = 150;
+						break;
+						
+					case 4:
+						rpu = 180;
+						break;
+						
+					case 5: 
+						rpu = 180;
+						break;		
+				}
+				
+				int tf = rpu * ue;
+				
+				if (ue>=1 && ue<=7)
+				{
+					dp = 100;
+				}
+				else if (ue>=8 && ue<=15)
+				{
+					dp = 750;
+				}
+				else if (ue>=16 && ue<=24)
+				{
+					dp = 1000;
+				}
+				
+				int bal = tf - dp;
+				
+				Console.WriteLine("Student name : {0}", studName);
+				Console.WriteLine("Tuition fee : {0}", tf);
+				Console.WriteLine("Down payment : {0}", dp);
+				Console.WriteLine("Balance : {0}", bal);
+				
+			}
+		}
+	}
+}

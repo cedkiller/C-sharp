@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a number and determine if it falls in the range of 100 to 500 only.
+		int num;
+		
+		Console.Write("Input a number and we will determine if it falls to the range of 100 to 500");
+		num = Convert.ToInt16(Console.ReadLine());
+		
+		if (num>=100&&num<=500)
+			Console.WriteLine("{0} is in the range of 100 to 500", num);
+		else
+			Console.WriteLine("{0} not in the range of 100 to 500", num);
+	}
+}

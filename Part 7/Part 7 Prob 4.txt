@@ -1,0 +1,29 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Generate Lotto 6/42
+		
+		Random r = new Random();
+		char ch;
+		int ctr = 1;
+		
+		do {
+			while (ctr<=6)
+			{
+				int total = r.Next(1, 43);
+				Console.Write(total + " ");
+				
+				ctr ++;
+			}
+			Console.WriteLine();
+			
+			Console.WriteLine("Do you want to try again? (Y/N)");
+			ch = Convert.ToChar(Console.ReadLine());
+		}while (ch=='Y'||ch=='y');
+		
+		Console.WriteLine("Program Terminated");
+	}
+}

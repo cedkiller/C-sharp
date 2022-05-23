@@ -1,0 +1,22 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a character and determine if it is a letter ‘A’ / ‘a’ or not.
+		
+		char ch;
+		char a;
+		char A;
+		
+		Console.Write("Input one character : ");
+		ch = Convert.ToChar(Console.ReadLine());
+		
+		if (ch=='A'||ch=='a')
+			Console.Write("The letter is A/a");
+		else
+			Console.Write("The letter is not A/a");
+			
+	}
+}

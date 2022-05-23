@@ -1,0 +1,36 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input the following: employee name, number of days worked, and rate per day.  
+		//The outputs are: employee name, gross pay, total deduction, and net pay.
+		
+		string empName;
+		int gPay, ndw, rpd;
+		double sss, tax, totDed, nPay;
+		
+		Console.Write("Employee Name : ");
+		empName = Convert.ToString(Console.ReadLine());
+		
+		Console.Write("Number of Days Worked : ");
+		ndw = Convert.ToInt16(Console.ReadLine());
+		
+		Console.Write("Rate Per Day : ");
+		rpd = Convert.ToInt16(Console.ReadLine());
+		
+		gPay = ndw * rpd;
+		sss = 0.10 * gPay;
+		tax = 0.125 * gPay;
+		totDed = sss + tax;
+		nPay = gPay - totDed;
+		
+		Console.WriteLine("Employee Name : " + empName);
+		Console.WriteLine("Gross Pay : " + gPay);
+		Console.WriteLine("Total Deduction : " + totDed);
+		Console.WriteLine("Net Pay : " + nPay);
+		
+		
+	}
+}

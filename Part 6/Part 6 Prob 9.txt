@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a series of numbers and terminate the process once zero is entered.
+		
+		int num;
+		
+		do
+		{
+			Console.Write("Input a number and it will terminate once zero is entered : ");
+			num = Convert.ToInt16(Console.ReadLine());
+			
+			
+		}while (num>0 || num<0);
+	}
+}

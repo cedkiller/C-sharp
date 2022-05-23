@@ -1,0 +1,27 @@
+a.     The formula for the area of circle is expressed as A = ?r2.  Where A is the are of the circle, ? (PI) has a constant value of 3.1416, and r is the radius of the circle.
+
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		const double Pi = 3.1416;
+		double r, A;
+		
+		Console.Write("Enter a Radius : ");
+		r = Convert.ToDouble(Console.ReadLine());
+		
+		A = Pi * r * r;
+		
+		Console.Write("Here is your Area : " + A);
+		
+		
+		
+		
+		
+		
+	}
+}

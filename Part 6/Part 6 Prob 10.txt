@@ -1,0 +1,37 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Repeat problem count the number of positive and negative numbers.
+		//loop
+		
+		int num;
+		int ctrPos = 0;
+		int ctrNeg = 0;
+		
+		do
+		{
+			Console.Write("Input a number and we will count if it's positive or negative number : ");
+			num = Convert.ToInt16(Console.ReadLine());
+			
+			
+			if (num>0)
+			{
+				ctrPos ++;
+			}
+			else if (num<0)
+			{
+				ctrNeg ++;
+			}
+			
+			
+			
+		}while(num>0 || num<0);
+		
+		Console.WriteLine("Positive count is {0}", ctrPos);
+		Console.WriteLine("Negative count is {0}", ctrNeg);
+		
+	}
+}

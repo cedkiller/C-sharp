@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input two numbers and output the numbers in ascending order.  Ascending order means the numbers should be displayed from the lower to the higher number.
+		int num1, num2;
+		
+		Console.WriteLine("Input 2 numbers and we will determine it in ascending order : ");
+		num1 = Convert.ToInt16(Console.ReadLine());
+		num2 = Convert.ToInt16(Console.ReadLine());
+		
+		if (num1<num2)
+			Console.Write("The Ascending order is {0},{1}", num1,num2);
+		else
+			Console.Write("The Ascending order is {0},{1}", num2,num1);
+		
+
+	}
+}

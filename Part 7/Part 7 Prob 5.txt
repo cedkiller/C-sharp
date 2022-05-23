@@ -1,0 +1,46 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Generate 10 numbers 0 to 40 and count if its even or odd
+		//And ask if the user want to try again and if no then write Program Terminated
+		
+		Random r = new Random();
+		int ctr = 1;
+		int ctreven = 0;
+		int ctrodd = 0;
+		char ch;
+		
+		do 
+		{
+			while (ctr<=10)
+			{
+				int total = r.Next(0, 41);
+				Console.Write(total + " ");
+			
+				if (total%2==0)
+				{
+					ctreven ++;
+				}
+				else
+				{
+					ctrodd ++;
+				}
+				
+				ctr ++;
+			}
+			Console.WriteLine();
+			
+			Console.WriteLine("Total even numbers is {0}", ctreven);
+			Console.WriteLine("Total odd numbers is {0}", ctrodd);
+			
+			Console.WriteLine("Do you want to try again? (Y/N)");
+			ch = char.Parse(Console.ReadLine());
+		}while (ch=='Y'||ch=='y');
+		
+		Console.WriteLine("Program Terminated");
+		
+	}
+}

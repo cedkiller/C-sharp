@@ -1,0 +1,38 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input 5 numbers and get the sum of these numbers.
+		
+		int num;
+		int sum = 0;
+		int ctr = 0;
+		
+		do 
+		{
+			Console.WriteLine("Input 5 number");
+			num = Convert.ToInt16(Console.ReadLine());
+			
+			if (num>=0)
+			{
+				ctr ++;
+			}
+			else
+			{
+				ctr ++;
+			}
+			
+			sum = sum + num;
+			
+			if (ctr>=5)
+			{
+				break;
+			}
+			
+		}while(true);
+		
+		Console.WriteLine("The sum is {0}", sum);
+	}
+}

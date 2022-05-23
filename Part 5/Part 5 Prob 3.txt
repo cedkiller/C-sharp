@@ -1,0 +1,53 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Write a C# Sharp program to read roll no, name and marks of three subjects and calculate the total, percentage and division
+		//total = phy+che+ca;
+    	//per = total/3.0;
+    	//if (per>=60)
+	 	//div="First";
+    	//else
+		//if (per<60&&per>=48)
+	    //div="Second";
+		//else
+	    //if (per<48&&per>=36)
+		//div="Pass";
+	    //else
+		//div="Fail";
+		
+		Console.Write("Enter your roll number : ");
+		int r = int.Parse(Console.ReadLine());
+		
+		Console.Write("Enter student name : ");
+		string studName = Console.ReadLine();
+		
+		Console.Write("Enter your marks in english : ");
+		int e = int.Parse(Console.ReadLine());
+		
+		Console.Write("Enter your marks in math : ");
+		int m = int.Parse(Console.ReadLine());
+		
+		Console.Write("Enter your marks in science : ");
+		int s = int.Parse(Console.ReadLine());
+		
+		int total = e + m + s;
+		
+		Console.WriteLine("Total marks : {0}", total);
+		
+		double per = (double) total / 3.0;
+		
+		Console.WriteLine("Percentage : {0}", per);
+		
+		if (per>=60)
+			Console.WriteLine("Division : First");
+		else if (per<60 && per>=48)
+			Console.WriteLine("Division : Second");
+		else if (per<48 && per>=36)
+			Console.WriteLine("Division : Pass");
+		else
+			Console.WriteLine("Division : Fail");
+	}
+}

@@ -1,0 +1,62 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a character and determine if it is 'alphabetic', 'numeric' or a 'special' character.
+		//a. If a character is alphabetic, determine if it is a 'vowel' or 'consonant'.
+		//b. If a character is a special character, determine if it is an arithmetic operator (+, -, *, /, %)
+		//Ask the user to repeat the process and terminate the program once the user answere 'N'/'n'.
+		
+		Console.Write("Input a Character : ");
+		char ch = char.Parse(Console.ReadLine());
+		
+		if (Char.IsLetter(ch))
+		{
+			if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+			{
+				Console.WriteLine("The Character is alphabetic and it is a vowel");
+			}
+			else
+			{
+				Console.WriteLine("The Character is alphabetic and it is a consonant");
+			}
+			if (ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+			{
+				Console.WriteLine("The Character is alphabetic and it is a vowel");
+			}
+			else
+			{
+				Console.WriteLine("The Character is alphabetic and it is a consonant");
+			}
+		}
+		else if (Char.IsNumber(ch))
+		{
+			Console.WriteLine("The Character is numeric");
+		}
+		else 
+		{
+			if (ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch=='%')
+			{
+				Console.WriteLine("The Character is arithmetic operators");
+			}
+			else
+			{
+				Console.WriteLine("The Character is special characters");
+			}
+		}
+		
+		Console.Write("Do you want to try again? (Y/N) : ");
+		char ch2 = char.Parse(Console.ReadLine());
+		
+		if (ch2=='Y' || ch2=='y')
+		{
+			Main();
+		}
+		else 
+		{
+			Console.WriteLine("Program Terminated");
+		}
+	}
+}

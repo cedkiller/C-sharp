@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Generate the series 1, 100, 2, 95, 3, 90, 4, 85, 5, 80
+		
+		int ctr = 1, ctr2 = 100;
+		
+		while (ctr<=5 && ctr2>=80)
+		{
+			Console.WriteLine(ctr+"\n"+ctr2+"");
+			
+			ctr ++;
+			ctr2 = ctr2 - 5;
+		}
+	}
+}

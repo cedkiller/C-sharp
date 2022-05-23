@@ -1,0 +1,39 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a number from 1 to 5 only and output its word equivalent.  Any other numbers are considered ‘Invalid’.
+		
+		Console.Write("Input a number : ");
+		int n = Convert.ToInt16(Console.ReadLine());
+		
+		switch (n) 
+		{
+			case 1:
+				Console.WriteLine("One");
+				break;
+				
+			case 2:
+				Console.WriteLine("Two");
+				break;
+				
+			case 3:
+				Console.WriteLine("Three");
+				break;
+				
+			case 4:
+				Console.WriteLine("Four");
+				break;
+				
+			case 5: 
+				Console.WriteLine("Five");
+				break;
+				
+			default:
+				Console.WriteLine("Invalid");
+				break;
+		}
+	}
+}

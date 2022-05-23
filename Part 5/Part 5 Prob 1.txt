@@ -1,0 +1,72 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Create an area menu 
+		//Area Menu
+		//1.    areaOfCircle = ac=PI*r^2
+		//2.     areaOfRectangle = lw l = length, w = width ar=l*w
+		//3.     areaOfSquare = s2 s = side as=s^2
+		//4.     areaOfTriangle = 1/2bh b = base, h = height at=1/2*b*h
+		
+		Console.WriteLine("Choose [1-4] only");
+		Console.WriteLine("Area Menu");
+		Console.WriteLine("1. Circle");
+		Console.WriteLine("2. Rectangle");
+		Console.WriteLine("3. Square");
+		Console.WriteLine("4. Triangle");
+		Console.Write("> ");
+		int n = Convert.ToInt16(Console.ReadLine());
+		
+		if (n==1)
+		{
+			Console.Write("Input a radius : ");
+			int r = Convert.ToInt16(Console.ReadLine());
+			
+			double ac = Math.PI * Math.Pow(r,2);
+			
+			Console.WriteLine("The area of circle is : {0}", ac);
+		}
+		
+		else if (n==2)
+		{
+			Console.Write("Input a length : ");
+			int l = Convert.ToInt16(Console.ReadLine());
+			
+			Console.Write("Input a Width : ");
+			int w = Convert.ToInt16(Console.ReadLine());
+			
+			int ar = l * w;
+			
+			Console.WriteLine("The area of rectangle is : {0}", ar);
+		}
+		else if (n==3)
+		{
+			Console.Write("Input a side : ");
+			int s = Convert.ToInt16(Console.ReadLine());
+			
+			double ass = Math.Pow(s,2);
+			
+			Console.WriteLine("The are of square is : {0}", ass);
+		}
+		else if (n==4)
+		{
+			Console.Write("Input a base : ");
+			int b = Convert.ToInt16(Console.ReadLine());
+			
+			Console.Write("Input a height : ");
+			int h = Convert.ToInt16(Console.ReadLine());
+			
+			double at = (double)1 / 2 * b * h;
+			
+			Console.WriteLine("The area of triangle is : {0}", at);
+		}
+		else
+		{
+			Console.WriteLine("Invalid");
+		}
+		
+	}
+}

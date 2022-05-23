@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Generate the series 1, 1, 2, 4, 3, 9, 4, 16, 5, 25.
+		
+		int ctr = 1;
+		int ctr2 = 1;
+		
+		while (ctr<=5)
+		{
+			Console.WriteLine(ctr+"\n"+ctr2+"");
+			
+			ctr ++;
+			ctr2 = ctr * ctr;
+		}
+	}
+}

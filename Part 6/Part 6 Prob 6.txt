@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Generate the series -3, -2, -1, 0, 1, 2, 3.
+		
+		int ctr = -3;
+		
+		while (ctr<=3)
+		{
+			Console.WriteLine(ctr);
+			
+			ctr ++;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input a series of numbers and terminate the process once the sum of the input numbers is more than 100.
+		
+		int num;
+		int sum = 0;
+		
+		do
+		{
+			Console.Write("Input a number and we will terminate once the sum is more than 100 : ");
+			num = Convert.ToInt16(Console.ReadLine());
+			
+			sum = sum + num;
+			
+			Console.WriteLine("The sum is {0}", sum);
+			
+			if (sum>=100)
+			{
+				break;
+			}
+			
+		}while(true);
+	}
+}

@@ -1,0 +1,31 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Input three numbers. Get the sum of the first two numbers, difference of the last two numbers, and product of the first and the last numbers.
+
+		
+		int num1, num2, num3, sum, dif, pro;
+		
+		Console.Write("Input a Number : ");
+		num1 = Convert.ToInt16(Console.ReadLine());
+		
+		Console.Write("Input Another Number : ");
+		num2 = Convert.ToInt16(Console.ReadLine());
+		
+		Console.Write("Input The Last Number : ");
+		num3 = Convert.ToInt16(Console.ReadLine());
+		
+		sum = num1 + num2;
+		dif = num2 - num3;
+		pro = num1 * num3;
+		
+		Console.WriteLine("Your sum is : " + sum);
+		Console.WriteLine("Your dif is : " + dif);
+		Console.WriteLine("Your pro is : " + pro);
+		
+		
+	}
+}

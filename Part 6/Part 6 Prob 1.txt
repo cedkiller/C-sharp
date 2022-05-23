@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		// Generate the first 5 positive numbers.
+		//loop
+		
+		int ctr = 1;
+		
+		while (ctr<=5)
+		{
+			Console.WriteLine(ctr);
+			
+			ctr ++;
+		}
+
+	}
+}
